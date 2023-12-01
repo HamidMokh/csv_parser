@@ -19,7 +19,7 @@ fs.createReadStream('kepler_data.csv')
 .pipe(parse({
     // the data of the file are streaming --> the output is a binary file
     // in order to parse it using csv parser we have to put the stream in
-    // a pipe then put it into a parse stream --> output will be java script objects 
+    // a pipe then put it into a parse stream --> output will be java script objects s
     comment: '#',
     columns: true,
 }))
